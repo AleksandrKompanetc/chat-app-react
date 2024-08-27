@@ -7,7 +7,7 @@ function App() {
     <div>
       <Router>
         <Switch>
-          
+          <Route path='/' component={Login} />
         </Switch>
       </Router>
     </div>
