@@ -1,14 +1,14 @@
 import React from 'react';
-
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Login from './Login';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div>
       <Router>
-        <Switch>
-          <Route path='/' component={Login} />
-        </Switch>
+        <Routes>
+          <Route path='/' element={<Login />} />
+        </Routes>
       </Router>
     </div>
   );
