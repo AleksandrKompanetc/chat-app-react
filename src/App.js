@@ -1,11 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SignUp from './components/auth/SignUp';
+import SignIn from './components/auth/SignIn';
+import AuthDetails from './components/auth/AuthDetails';
 
 function App() {
   return (
     <div className='App'>
       <SignUp />
+      <SignIn />
+      <AuthDetails />
     </div>
   );
 }
