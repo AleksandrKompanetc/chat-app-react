@@ -1,5 +1,8 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+
+import { auth } from './firebase';
+import {useAuthState} from 'react-firebase-hooks/auth';
 // import SignUp from './components/auth/SignUp';
 // import SignIn from './components/auth/SignIn';
 // import AuthDetails from './components/auth/AuthDetails';
@@ -10,6 +13,7 @@ const style = {
 }
 
 function App() {
+  const [user] = useAuthState(auth);
   return (
     <div className={style.appContainer}>
       <section className={style.sectionContainer}>
