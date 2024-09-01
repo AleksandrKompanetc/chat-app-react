@@ -31,7 +31,7 @@ const Chat = () => {
           <Message key={message.id} message={message} />
         ))}
       </main>
-      <SendMessage />
+      <SendMessage scroll={scroll} />
       <span ref={scroll}></span>
     </>
     
